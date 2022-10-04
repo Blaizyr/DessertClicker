@@ -1,4 +1,4 @@
-package com.example.dessertclicker.ui.theme
+package com.example.dessertclicker.ui
 
 import android.content.ActivityNotFoundException
 import android.content.Context
@@ -8,7 +8,7 @@ import androidx.core.content.ContextCompat
 import androidx.lifecycle.ViewModel
 import com.example.dessertclicker.R
 import com.example.dessertclicker.data.Datasource.dessertList
-import com.example.dessertclicker.model.Dessert
+import com.example.dessertclicker.data.DessertUiState
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
