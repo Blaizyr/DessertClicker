@@ -43,9 +43,15 @@ android {
             excludes += '/META-INF/{AL2.0,LGPL2.1}'
         }
     }
+    namespace 'com.example.dessertclicker'
 }
 
 dependencies {
+    buildscript {
+        ext {
+            lifecycle_version = '2.5.1'
+        }
+    }
 
     debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_version"
     debugImplementation "androidx.compose.ui:ui-tooling:$compose_version"
@@ -55,4 +61,6 @@ dependencies {
     implementation "androidx.compose.ui:ui-tooling-preview:$compose_version"
     implementation 'androidx.core:core-ktx:1.8.0'
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.5.1'
+
+    implementation "androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycle_version"
 }
